@@ -8,7 +8,6 @@ jcpp_add_dependencies(
 	"java.logging:17.35"
 	"java.management:17.35"
 	"java.management.rmi:17.35"
-	"java.management.rmi:17.35"
 	"java.naming:17.35"
 	"java.net.http:17.35"
 	"java.prefs:17.35"
@@ -81,7 +80,9 @@ install(
 	DESTINATION "${JCPP_INSTALL_PATH}"
 )
 
-install(
-	FILES "dependencies.txt"
-	DESTINATION "${JCPP_INSTALL_PATH}"
-)
+if(INSTALL_TO_REPO)
+	install(
+		FILES "dependencies.txt"
+		DESTINATION "${JCPP_INSTALL_PATH}"
+	)
+endif()

@@ -7,7 +7,6 @@
 #include <java.logging.h>
 #include <java.management.h>
 #include <java.management.rmi.h>
-#include <java.management.rmi.h>
 #include <java.naming.h>
 #include <java.net.http.h>
 #include <java.prefs.h>
@@ -60,7 +59,6 @@ void java$se::init() {
 	::java$instrument::init();
 	::java$logging::init();
 	::java$management::init();
-	::java$management$rmi::init();
 	::java$management$rmi::init();
 	::java$naming::init();
 	::java$net$http::init();

@@ -5,7 +5,6 @@ java.instrument:17.35
 java.logging:17.35
 java.management:17.35
 java.management.rmi:17.35
-java.management.rmi:17.35
 java.naming:17.35
 java.net.http:17.35
 java.prefs:17.35
